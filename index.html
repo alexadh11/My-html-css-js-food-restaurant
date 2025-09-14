@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<!-- Coding By Alex Adhikary -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Restaurant Website | Alex Adhikary</title>
+    <!-- Linking Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <!-- Linking Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Linking custom CSS -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar section-content">
+        <a href="#" class="nav-logo">
+          <h2 class="logo-text">🍔 YumTown</h2>
+        </a>
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+
+          <li class="nav-items">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-items">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-items">
+            <a href="#menu" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-items">
+            <a href="#reviews" class="nav-link">Reviews</a>
+          </li>
+          <li class="nav-items">
+            <a href="#gallery" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-items">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="section-content">
+          <div class="hero-details">
+            <h2 class="title">Unique Cuisines</h2>
+            <h3 class="subtitle">
+              Make your meals great with our yummy special and assorted food
+              choices at resaonable prices
+            </h3>
+            <p class="description">
+              Welcome to our YumTown, where every element of the food dishes are
+              freshly homemade with extra care, each cuisine shares a distinct
+              story with the choice of ingredients in it and the unique taste
+            </p>
+
+            <div class="buttons">
+              <a href="#" class="button order-now">Order Now</a>
+              <a href="#" class="button contact-us">Contact Us</a>
+            </div>
+          </div>
+          <div class="hero-image-wrapper">
+            <img
+              src="images/burger-hero-section.png"
+              alt="Hero"
+              class="hero-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us section -->
+      <section class="about-section" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="images/about-image.png" alt="About" class="about-image" />
+          </div>
+          <div class="about-details">
+            <h2 class="section-title">About Us</h2>
+            <p class="text">
+              At YumTown in Dhaka, Bangladesh, we pride ourselves on being a
+              go-to destination for food lovers and conversation seekers. From
+              juicy burgers and fresh subway sandwiches to smoothies, fried
+              seafood rice bowl, snacks, platters, and indulgent desserts like
+              tiramisu, chocolate lava cake, and apple pie—we’re dedicated to
+              serving an exceptional dining experience in a cozy, welcoming
+              atmosphere where guests can relax and enjoy time with their loved
+              ones.
+            </p>
+            <div class="social-link-list">
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu section -->
+      <section class="menu-section" id="menu">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="section-content">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <img
+                src="images/beef-burger.png"
+                alt="Beef Burger"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Beef Burger</h3>
+                <p class="text">
+                  This is a beef burger with a 300g minced patty, fried egg,
+                  sautéed mushrooms, semi-melted cheddar and mozzarella, two
+                  sauce dressings, and tomato slices.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/chicken-burger.png"
+                alt="Chicken Burger"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Chicken Burger</h3>
+                <p class="text">
+                  This is a chicken burger with a 300g minced patty, fried egg,
+                  sautéed mushrooms, semi-melted cheddar and mozzarella, two
+                  sauce dressings, and tomato slices.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/mutton-burger.png"
+                alt="Mutton Burger"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Mutton Burger</h3>
+                <p class="text">
+                  This is a mutton burger with a 300g minced patty, fried egg,
+                  sautéed mushrooms, semi-melted cheddar and mozzarella, two
+                  sauce dressings, and tomato slices.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/shrimp-burger.png"
+                alt="Shrimp Burger"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Shrimp Burger</h3>
+                <p class="text">
+                  This is a shrimp burger with a 300g minced shrimp patty, fried
+                  small shrimps, sautéed mushrooms, semi-melted cheddar and
+                  mozzarella, two sauce dressings, and diced tomato-cucumber mix
+                  at the bottom.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/vegan-burger.png"
+                alt="Vegan Burger"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Vegan Burger</h3>
+                <p class="text">
+                  This is a vegan burger with a 300g minced soya patty, fried
+                  small tofu pieces, onion slices, plant-based cheddar and
+                  mozzarella cheese slices, two vegan sauce dressings, and
+                  tomato slices.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/tuna-burger.png"
+                alt="Tuna Burger"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Tuna Burger</h3>
+                <p class="text">
+                  This is a tuna burger with a 300g minced patty, fried banana
+                  chips, sautéed mushrooms, semi-melted cheddar and mozzarella
+                  cheese slices, two unique white sauce dressings, and cucumber
+                  slices at the bottom.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/crab-burger.png"
+                alt="Crab Burger"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Crab Burger</h3>
+                <p class="text">
+                  This is a crab burger with a 300g minced crab meat patty,
+                  fried egg, sautéed mushrooms, semi-melted cheddar and
+                  mozzarella cheese slices, two unique sauce dressings, and
+                  diced tomato-cucumber mix at the bottom.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/seafood-fried-rice-bowl.png"
+                alt="Seafood Fried Rice Bowl"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Seafood Fried Rice Bowl</h3>
+                <p class="text">
+                  This is a medium bowl of spicy seafood fried rice with fried
+                  egg pieces, cubically diced veggies, fried crab-shrimp meat
+                  mixed minced balls, fried octopus tentacles and fried tuna
+                  slices with cooked shredded dory and snapper in shrimp butter
+                  crab roe, fried calamari rings, and chopped coriander.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/turkey-subway-sandwich.png"
+                alt="Turkey Subway Sandwich"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Turkey Subway Sandwich</h3>
+                <p class="text">
+                  This is a long brioche subway sandwich with diced
+                  tomato-cucumber-coriander salad in garlic house dressing,
+                  turkey pepperoni, shredded grilled turkey, semi-melted cheddar
+                  and mozzarella, caramelized mushrooms and onions, and green
+                  Mexican salsa.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/mutton-subway-sandwich.png"
+                alt="Mutton Subway Sandwich"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Mutton Subway Sandwich</h3>
+                <p class="text">
+                  This is a long brioche subway sandwich with diced
+                  tomato-cucumber-coriander salad in garlic house dressing,
+                  mutton pepperoni, shredded grilled mutton, semi-melted cheddar
+                  and mozzarella, caramelized onions, and spicy red Mexican
+                  salsa.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/octopus-subway-sandwich.png"
+                alt="Octopus Subway Sandwich"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Octopus Subway Sandwich</h3>
+                <p class="text">
+                  This is a long brioche subway sandwich with diced
+                  tomato-cucumber-coriander salad in garlic lemon house
+                  dressing, fried octopus slices, barbecued octopus tentacles,
+                  semi-melted cheddar and mozzarella, caramelized mushrooms and
+                  onions, and green spicy Mexican salsa with fish sauce.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/long-frenchfries.png"
+                alt="Japanese Style Long Potatoes Sticks"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Japanese Style Long Potatoes Sticks</h3>
+                <p class="text">
+                  This is a bowl of fried japanese style long potatoes sticks
+                  with four different sauce dips.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/fried-chicken-platter.png"
+                alt="Fried Chicken Platter"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Fried Chicken Platter</h3>
+                <p class="text">
+                  This is a platter with a fried chicken leg, a fried chicken
+                  thigh, and a fried chicken breast, served with three assorted
+                  dipping sauces.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/seafood-snacks-platter.png"
+                alt="Seafood Snacks Platterr"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Seafood Snacks Platter</h3>
+                <p class="text">
+                  This is a platter of medium-sized fried calamari rings and
+                  minced shrimp and crab meat mixed crustacean balls and served
+                  with three different sauce dips.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/fried-chicken-skins.png"
+                alt="Fried Chicken Skins"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Fried Chicken Skins</h3>
+                <p class="text">
+                  This is a plate of two fried chicken long skins and served
+                  with three different sauce dips.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/black-coffee.png"
+                alt="Black Coffee"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Black Coffee</h3>
+                <p class="text">This is our house special black coffee.</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/chocolate-smoothie.png"
+                alt="Chocolate Smoothie"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Chocolate Smoothie</h3>
+                <p class="text">
+                  This is a glass of chocolate smoothie with chocolate syrup,
+                  Oreo biscuits, and a chocolate wafer stick.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/caramel-smoothie.png"
+                alt="Caramel Smoothie"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Caramel Smoothie</h3>
+                <p class="text">
+                  This is a glass of caramel smoothie with caramel syrup, toffee
+                  crumbles, waffle biscuits, and a caramel waffle stick.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/strawberry-smoothie.png"
+                alt="Strawberry Smoothie"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Strawberry Smoothie</h3>
+                <p class="text">
+                  This is a glass of strawberry smoothie with strawberry syrup,
+                  diced strawberries, waffle crumbles, waffle biscuits, and a
+                  strawberry waffle stick.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/vanillabeans-soyamilk-smoothie.png"
+                alt="Vanilla Smoothie"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Vanilla Smoothie</h3>
+                <p class="text">
+                  This is a glass of vanilla bean smoothie with vanilla bean
+                  extract, soy milk, sugar syrup, waffle biscuits, and a waffle
+                  stick.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/matcha-banana-pecan-smoothie.png"
+                alt="Healthy Trio Smoothie"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Healthy Trio Smoothie</h3>
+                <p class="text">
+                  This is a glass of matcha-banana smoothie with sugar syrup,
+                  waffle biscuits, pecans, and a waffle stick.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/chocolate-lava-cake.png"
+                alt="Chocolate Lava Delight"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Chocolate Lava Delight</h3>
+                <p class="text">
+                  This is a chocolate cupcake with molten chocolate filling,
+                  topped with chocolate-flavored waffles.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/sweet-apple-pie.png"
+                alt="Sweet Apple Pie"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Sweet Apple Pie</h3>
+                <p class="text">
+                  This is a mini apple pie with a golden lattice crust,
+                  cinnamon-caramel apple filling, and a small round dish
+                  one-third the height of a burger.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="images/house-special-tiramisu.png"
+                alt="House Special Tiramisu"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">House Special Tiramisu</h3>
+                <p class="text">
+                  This is a classic Italian tiramisu in a small round dish with
+                  espresso-soaked ladyfingers, mascarpone cream, and cocoa
+                  powder, at one-fourth the height of a burger.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Reviews-section -->
+      <section class="reviews-section" id="reviews">
+        <h2 class="section-title">Reviews</h2>
+        <div class="section-content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="reviews-list swiper-wrapper">
+                <li class="reviews swiper-slide">
+                  <img src="images/user-1.png" alt="User" class="user-image" />
+                  <h3 class="name">Shoiab Hossain</h3>
+                  <i class="feedback"
+                    >"Loved the cozy vibe and friendly staff! Coming back for
+                    the Beef Burger, Chocolate Smoothie, Japanese Fries, and
+                    their House Special Tiramisu as everything sounds too good
+                    to miss!"</i
+                  >
+                </li>
+                <li class="reviews swiper-slide">
+                  <img src="images/user-2.png" alt="User" class="user-image" />
+                  <h3 class="name">Emily Mwangi</h3>
+                  <i class="feedback"
+                    >"Modern, comfy interior perfect for chilling solo or with
+                    friends. The Seafood Bowl, Healthy Trio Smoothie, and Snacks
+                    Platter were amazing. The Mutton Burger and Octopus Subway
+                    are totally unique and worth it!"</i
+                  >
+                </li>
+                <li class="reviews swiper-slide">
+                  <img src="images/user-3.png" alt="User" class="user-image" />
+                  <h3 class="name">Seojin Han</h3>
+                  <i class="feedback"
+                    >"Stylish yet cozy setup—perfect for relaxing. Tried the
+                    Shrimp Burger, Tuna Burger, Fried Chicken Skin, Turkey
+                    Subway, Vanilla and Caramel Smoothies, plus their Black
+                    Coffee. Everything was packed with flavor!"</i
+                  >
+                </li>
+                <li class="reviews swiper-slide">
+                  <img src="images/user-4.png" alt="User" class="user-image" />
+                  <h3 class="name">Julia Ashbourne</h3>
+                  <i class="feedback"
+                    >Opening day was a blast—loved the magic show! Mutton
+                    Subway, Beef and Crab Burgers, Seafood Platter, Strawberry
+                    Smoothie, and House Tiramisu made it unforgettable.</i
+                  >
+                </li>
+                <li class="reviews swiper-slide">
+                  <img src="images/user-5.png" alt="User" class="user-image" />
+                  <h3 class="name">Mary Abiola</h3>
+                  <i class="feedback"
+                    >YumTown nailed it—crispy Chicken Skins, epic Fried Chicken
+                    Platter, Japanese Fries, Seafood Rice, Vanilla Smoothie,
+                    Turkey Subway, Crab Burger, and Apple Pie. Great food,
+                    friendly staff, and stylish vibes.</i
+                  >
+                </li>
+                <li class="reviews swiper-slide">
+                  <img src="images/user-6.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Missy Parker</h3>
+                  <i class="feedback"
+                    >YumTown’s chill vibe and helpful staff made it awesome.
+                    Mutton Burger, Octopus Subway, Seafood Platter, Healthy Trio
+                    Smoothie, and House Tiramisu were all spot-on. Definitely
+                    coming back again.</i
+                  >
+                </li>
+                <li class="reviews swiper-slide">
+                  <img src="images/user-7.png" alt="User" class="user-image" />
+                  <h3 class="name">Williams Adeyemi</h3>
+                  <i class="feedback"
+                    >YumTown nailed it with cozy vibes and killer food. Loved
+                    the Beef & Crab Burgers, Seafood Bowl, Japanese Fries,
+                    Strawberry Smoothie, and Apple Pie. Great spot and
+                    resaonable prices, definitely coming back!</i
+                  >
+                </li>
+                <li class="reviews swiper-slide">
+                  <img src="images/user-8.png" alt="User" class="user-image" />
+                  <h3 class="name">Rithika Adhikary</h3>
+                  <i class="feedback"
+                    >Stylish yet laid-back, YumTown felt like home. Mutton
+                    Subway, Tuna Burger, Chicken Skins, and Seafood Snacks
+                    Platter were amazing. Healthy Trio Smoothie and House
+                    Tiramisu sealed the deal. Solid vibes, awesome food.</i
+                  >
+                </li>
+                <li class="reviews swiper-slide">
+                  <img src="images/user-9.png" alt="User" class="user-image" />
+                  <h3 class="name">Travis McCoy</h3>
+                  <i class="feedback"
+                    >YumTown’s warm staff and comfy space made it perfect.
+                    Octopus Subway, Chicken Platter, Seafood Rice, Caramel
+                    Smoothie, and Apple Pie were all hits. A true gem in Dhaka
+                    can’t wait to return.</i
+                  >
+                </li>
+                <li class="reviews swiper-slide">
+                  <img src="images/user-10.png" alt="User" class="user-image" />
+                  <h3 class="name">Jimmy Christian</h3>
+                  <i class="feedback"
+                    >YumTown’s sleek yet comfy vibe felt great. Loved the Mutton
+                    Burger and Healthy Trio Smoothie. Next round going for the
+                    Shrimp Burger, Seafood Platter, Vanilla Smoothie, and Sweet
+                    Apple Pie can’t wait!</i
+                  >
+                </li>
+                <li class="reviews swiper-slide">
+                  <img src="images/user-11.png" alt="User" class="user-image" />
+                  <h3 class="name">Shidong Huan</h3>
+                  <i class="feedback"
+                    >"Exciting, down-to-earth feel at YumTown. Crab Burger,
+                    Fried Chicken Platter, and Caramel Smoothie were spot on.
+                    Next up smashing the Tuna Burger, Seafood Fried Rice Bowl,
+                    and Sweet Apple Pie as everyone’s is talking about them!"</i
+                  >
+                </li>
+                <li class="reviews swiper-slide">
+                  <img src="images/user-12.png" alt="User" class="user-image" />
+                  <h3 class="name">Wang Mang</h3>
+                  <i class="feedback"
+                    >"YumTown blends moderness with comfort, absolutely my kinda
+                    spot. The Shrimp Burger, Japanese Style Long Fries and
+                    Vanilla Smoothie were flawless. Soon revisiting for Mutton
+                    Subway Sandwich, Seafood Frice Rice and the House Special
+                    Tiramisu with Black Coffee."</i
+                  >
+                </li>
+              </ul>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery section -->
+      <section class="gallery-section" id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-content">
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img
+                src="images/gallery-1.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="images/gallery-2.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="images/gallery-3.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="images/gallery-4.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="images/gallery-5.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="images/gallery-6.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="images/gallery-7.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="images/gallery-8.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="images/gallery-nine.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="images/gallery-10.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="images/gallery-11.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="images/gallery-12.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+          <ul class="contact-info-list">
+            <li class="contact-info">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>187 Eskaton Tower, Moghbazar Mor, Ramna, Dhaka, BD 1217</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-envelope"></i>
+              <p>info@yumtown.com</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>+8801644089440</p>
+            </li>
+
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Monday to Friday: 10:00 AM to 10:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Saturday: 12:00 PM to 12:00 AM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Sunday: Closed</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-globe"></i>
+              <p>
+                https://my-beautiful-reactjs-tailwindcss-portfolio-h8b3ar86r.vercel.app"
+              </p>
+            </li>
+          </ul>
+
+          <form action="#" class="contact-form">
+            <input
+              type="text"
+              placeholder="Your name"
+              class="form-input"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Your email"
+              class="form-input"
+              required
+            />
+            <textarea
+              placeholder="Your message"
+              class="form-input"
+              required
+            ></textarea>
+            <button class="submit-button">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer section -->
+      <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">© 2025 YumTown</p>
+
+          <div class="social-link-list">
+            <a href="#" class="social-link">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+
+          <p class="policy-text">
+            <a href="#" class="policy-link">Privacy policy</a>
+            <span class="separator">•</span>
+            <a href="#" class="policy-link">Refund policy</a>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+  </body>
+</html>
